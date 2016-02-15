@@ -1,0 +1,247 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD9BD73B-D0FF-4CBE-8C8D-396A88362BA4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobileSrc.Sideline</RootNamespace>
+    <AssemblyName>sideline</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <DeployDirSuffix>mobilesrc\Sideline</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>sideline.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="Microsoft.WindowsMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsMobile.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsMobile.PocketOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsMobile.Status, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsMobile.Telephony, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataGrid" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\InputSelector.cs" />
+    <Compile Include="classes\Resources.cs" />
+    <Compile Include="classes\Utils.cs" />
+    <Compile Include="DetailsGeneral.Landscape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailsGeneral.Landscape.Designer.cs">
+      <DependentUpon>DetailsGeneral.Landscape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customcontrols.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LED.cs" />
+    <Compile Include="OwnerDrawnList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsEditor.Designer.cs">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sideline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sideline.Designer.cs">
+      <DependentUpon>Sideline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SidelineQueue.cs">
+    </Compile>
+    <Compile Include="ContactListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DetailsReminder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailsReminder.Designer.cs">
+      <DependentUpon>DetailsReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailsGeneral.Designer.cs">
+      <DependentUpon>DetailsGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailsNotes.Designer.cs">
+      <DependentUpon>DetailsNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsView.Designer.cs">
+      <DependentUpon>DetailsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Notifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notifier.Designer.cs">
+      <DependentUpon>Notifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notify.cs" />
+    <Compile Include="OwnerDrawnListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetailsGeneral.Landscape.resx">
+      <DependentUpon>DetailsGeneral.Landscape.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsEditor.resx">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sideline.resx">
+      <DependentUpon>Sideline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsReminder.resx">
+      <DependentUpon>DetailsReminder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsGeneral.resx">
+      <DependentUpon>DetailsGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsNotes.resx">
+      <DependentUpon>DetailsNotes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsView.resx">
+      <DependentUpon>DetailsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notifier.resx">
+      <DependentUpon>Notifier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlEditor.resx">
+      <DependentUpon>ControlEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="ControlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlEditor.Designer.cs">
+      <DependentUpon>ControlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\user.png" />
+    <None Include="images\highpriority.png" />
+    <None Include="images\lowpriority.png" />
+    <None Include="images\notify.png" />
+    <None Include="images\notify_off.png" />
+    <None Include="images\button_black.png" />
+    <None Include="images\button_blue.png" />
+    <None Include="images\button_green.png" />
+    <None Include="images\button_grey.png" />
+    <None Include="images\button_orange.png" />
+    <None Include="images\button_red.png" />
+    <None Include="images\button_orange_hover.png" />
+    <None Include="images\button_red_hover.png" />
+    <None Include="images\button_black_hover.png" />
+    <None Include="images\button_blue_hover.png" />
+    <None Include="images\button_green_hover.png" />
+    <None Include="images\button_grey_hover.png" />
+    <None Include="images\add_hover.png" />
+    <None Include="images\exit.png" />
+    <None Include="images\exit_hover.png" />
+    <None Include="images\properties.png" />
+    <None Include="images\properties_hover.png" />
+    <None Include="images\remove.png" />
+    <None Include="images\remove_hover.png" />
+    <None Include="images\add.png" />
+    <None Include="images\SidelineLogo.png" />
+    <None Include="images\SidelineLogo_Inverted.png" />
+    <None Include="images\add_small.png" />
+    <None Include="images\add_small_hover.png" />
+    <None Include="images\commonphrases.png" />
+    <None Include="images\notify_large.png" />
+    <None Include="images\notify_large_hover.png" />
+    <None Include="images\commonphrases_hover.png" />
+    <None Include="Resources\sideline.ico" />
+    <Content Include="sideline.ico" />
+    <Content Include="sidelineicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

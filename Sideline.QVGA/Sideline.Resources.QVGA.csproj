@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75F13E16-9E9B-4E12-B353-AABB27C8334A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobileSrc.Sideline</RootNamespace>
+    <AssemblyName>Sideline.Resources.QVGA</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>mobilesrc\Sideline</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_small_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_black_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_blue_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_green_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_grey_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_orange_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\button_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\buttons.pdn" />
+    <None Include="images\buttons_hover.pdn" />
+    <None Include="images\button_red_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\commonphrases.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\commonphrases_hover.png" />
+    <None Include="images\DryIcons.com  Free Icons  Luna Grey Icon Set.url" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\exit_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\highpriority.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lowpriority.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\notify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\notify_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\notify_large_hover.png" />
+    <None Include="images\notify_off.pdn" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\notify_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\properties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\properties_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\remove_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SidelineLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SidelineLogo_Inverted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sideline.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\groupingbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SidelineTitle_Inverted.png" />
+  </ItemGroup>
+</Project>
